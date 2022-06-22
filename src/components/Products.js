@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { baseUrl } from '../api/productAPI';
 
-export default function Products() {
+export default function Products({ addToCart }) {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
@@ -30,7 +30,9 @@ export default function Products() {
               {product.installments[0].value}
             </p>
           ) : null}
-          <button type="button">COMPRAR</button>
+          <button type="button" onClick={() => addToCart(product)}>
+            COMPRAR
+          </button>
         </li>
       ))}
     </ul>
