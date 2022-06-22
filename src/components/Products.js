@@ -8,15 +8,15 @@ export default function Products() {
     const getProducts = async () => {
       const response = await fetch(baseUrl);
       const data = await response.json();
-      console.log(data);
       setProducts(data);
+      console.log(data);
     };
 
     getProducts();
   }, []);
 
   return (
-    <div>
+    <ul>
       {products.map((product) => (
         <li key={product.productId}>
           <img src={product.imageUrl} alt={product.productName} />
@@ -30,8 +30,9 @@ export default function Products() {
               {product.installments[0].value}
             </p>
           ) : null}
+          <button type="button">COMPRAR</button>
         </li>
       ))}
-    </div>
+    </ul>
   );
 }
