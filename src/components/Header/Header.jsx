@@ -23,7 +23,7 @@ export default function Header({ cart }) {
       </div>
       <div>
         <S.Icon src={cartIcon} alt="Carrinho" />
-        <S.CartItemCount>9</S.CartItemCount>
+        <S.CartItemCount>{cart.length}</S.CartItemCount>
       </div>
     </S.Header>
   );
