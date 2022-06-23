@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import Header from './components/Header/Header';
 import Hero from './components/Hero/Hero';
+import Newsletter from './components/Newsletter/Newsletter';
 
 import Products from './components/Products/Products';
 
@@ -36,6 +37,7 @@ export default function App() {
       <Header cart={cart} />
       <Hero />
       <Products addToCart={addToCart} />
+      <Newsletter />
     </div>
   );
 }

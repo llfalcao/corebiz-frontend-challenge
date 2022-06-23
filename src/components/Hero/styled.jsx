@@ -2,9 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   display: flex;
-  border: 1px solid red;
   position: relative;
-  /* overflow: hidden; */
   height: 430px;
 `;
 
@@ -28,7 +26,8 @@ export const Base = styled.div`
   }
 
   & h1 {
-    font-weight: 700;
+    font-weight: 800;
+    line-height: 35pt;
   }
 `;
 

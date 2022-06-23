@@ -15,6 +15,13 @@ export default function Products({ addToCart }) {
     getProducts();
   }, []);
 
+  const priceToString = (price) =>
+    price.toLocaleString('pt-br', {
+      style: 'currency',
+      currency: 'BRL',
+      minimumFractionDigits: 2,
+    });
+
   return (
     <ul>
       {products.map((product) => (
@@ -22,14 +29,16 @@ export default function Products({ addToCart }) {
           <img src={product.imageUrl} alt={product.productName} />
           <p>{product.productName}</p>
           {/* todo: star rating component */}
-          {product.listPrice ? <p>de R$ {product.listPrice}</p> : null}
-          <p>por R$ {product.price}</p>
+          {product.listPrice ? <p>de {priceToString(product.listPrice)}</p> : null}
+          <p>por {priceToString(product.price)}</p>
+
           {product.installments.length > 0 ? (
             <p>
-              ou em {product.installments[0].quantity}x de R${' '}
-              {product.installments[0].value}
+              ou em {product.installments[0].quantity}x de{' '}
+              {priceToString(product.installments[0].value)}
             </p>
           ) : null}
+
           <button type="button" onClick={() => addToCart(product)}>
             COMPRAR
           </button>
