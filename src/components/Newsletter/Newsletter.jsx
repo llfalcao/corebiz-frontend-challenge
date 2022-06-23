@@ -1,13 +1,19 @@
 import '../../styles/newsletter.css';
 import { useState } from 'react';
+import { subscribe } from '../../api/newsletter';
 
 export default function Newsletter() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
+  const [subscribed, setSubscribed] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     console.log(name, email);
+    const response = await subscribe(name, email);
+    if (response.message === 'Created successfully') {
+      setSubscribed(true);
+    }
   };
 
   return (
@@ -34,6 +40,9 @@ export default function Newsletter() {
           Eu quero!
         </button>
       </form>
+      {subscribed ? (
+        <p className="newsletter__success">Obrigado por se cadastrar!</p>
+      ) : null}
     </div>
   );
 }

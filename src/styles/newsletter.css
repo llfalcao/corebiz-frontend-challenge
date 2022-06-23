@@ -40,3 +40,7 @@
   padding-right: 1.5rem;
   cursor: pointer;
 }
+
+.newsletter__success {
+  margin-top: 1rem;
+}

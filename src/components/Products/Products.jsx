@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { baseUrl } from '../../api/productAPI';
+import { baseUrl } from '../../api/products';
 
 export default function Products({ addToCart }) {
   const [products, setProducts] = useState([]);
