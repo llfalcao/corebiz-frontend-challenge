@@ -3,6 +3,7 @@ import Header from './components/Header/Header';
 import Banner from './components/Banner/Banner';
 import Products from './components/Products/Products';
 import Newsletter from './components/Newsletter/Newsletter';
+import Footer from './components/Footer/Footer';
 
 export default function App() {
   const [cart, setCart] = useState([]);
@@ -37,6 +38,7 @@ export default function App() {
       <Banner />
       <Products addToCart={addToCart} />
       <Newsletter />
+      <Footer />
     </div>
   );
 }
