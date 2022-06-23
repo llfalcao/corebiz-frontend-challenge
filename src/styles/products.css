@@ -7,7 +7,7 @@
   font-size: 24px;
   font-weight: 900;
   position: relative;
-  margin-top: 2rem;
+  margin: 2rem 0 0 2rem;
 }
 
 .products__title::after {
@@ -25,6 +25,13 @@
   justify-content: center;
   gap: 2rem;
   margin: 2rem 0 4rem;
+}
+
+@media (max-width: 1360px) {
+  .products__container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .product {
