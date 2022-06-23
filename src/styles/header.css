@@ -12,12 +12,12 @@
   align-items: center;
 }
 
-.logo {
+.header__logo {
   width: 150px;
   margin-right: 3rem;
 }
 
-.icon {
+.header__icon {
   width: 20px;
   margin: 0 0.25rem;
 }

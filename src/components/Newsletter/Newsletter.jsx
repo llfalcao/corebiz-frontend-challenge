@@ -18,7 +18,9 @@ export default function Newsletter() {
 
   return (
     <div className="newsletter">
-      <h2>Participe de nossas news com promoções e novidades!</h2>
+      <h2 className="newsletter__title">
+        Participe de nossas news com promoções e novidades!
+      </h2>
       <form className="newsletter__fields" onSubmit={handleSubmit}>
         <input
           id="name"

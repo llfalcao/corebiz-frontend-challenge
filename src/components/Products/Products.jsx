@@ -1,3 +1,4 @@
+import '../../styles/products.css';
 import { useState, useEffect } from 'react';
 import { baseUrl } from '../../api/products';
 
@@ -23,27 +24,40 @@ export default function Products({ addToCart }) {
     });
 
   return (
-    <ul>
-      {products.map((product) => (
-        <li key={product.productId}>
-          <img src={product.imageUrl} alt={product.productName} />
-          <p>{product.productName}</p>
-          {/* todo: star rating component */}
-          {product.listPrice ? <p>de {priceToString(product.listPrice)}</p> : null}
-          <p>por {priceToString(product.price)}</p>
+    <div className="products">
+      <h2 className="products__title">Mais Vendidos</h2>
 
-          {product.installments.length > 0 ? (
-            <p>
-              ou em {product.installments[0].quantity}x de{' '}
-              {priceToString(product.installments[0].value)}
-            </p>
-          ) : null}
+      <ul className="products__container">
+        {products.map((p) => (
+          <li key={p.productId} className="product">
+            <div className="product__info">
+              <img src={p.imageUrl} alt={p.productName} />
+              <p className="product__name">{p.productName}</p>
+              {/* todo: star rating component */}
+              {p.listPrice ? (
+                <p className="product__listPrice">de {priceToString(p.listPrice)}</p>
+              ) : (
+                <p className="placeholder"></p>
+              )}
+              <p className="product__price">por {priceToString(p.price)}</p>
 
-          <button type="button" onClick={() => addToCart(product)}>
-            COMPRAR
-          </button>
-        </li>
-      ))}
-    </ul>
+              {p.installments.length > 0 ? (
+                <p className="product__installments">
+                  ou em {p.installments[0].quantity}x de{' '}
+                  {priceToString(p.installments[0].value)}
+                </p>
+              ) : null}
+            </div>
+            <button
+              type="button"
+              className="product__buyBtn"
+              onClick={() => addToCart(p)}
+            >
+              COMPRAR
+            </button>
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 }
