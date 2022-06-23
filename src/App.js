@@ -1,9 +1,8 @@
 import { useState, useEffect } from 'react';
 import Header from './components/Header/Header';
-import Hero from './components/Hero/Hero';
-import Newsletter from './components/Newsletter/Newsletter';
-
+import Banner from './components/Banner/Banner';
 import Products from './components/Products/Products';
+import Newsletter from './components/Newsletter/Newsletter';
 
 export default function App() {
   const [cart, setCart] = useState([]);
@@ -35,7 +34,7 @@ export default function App() {
   return (
     <div className="App">
       <Header cart={cart} />
-      <Hero />
+      <Banner />
       <Products addToCart={addToCart} />
       <Newsletter />
     </div>

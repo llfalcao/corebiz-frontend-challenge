@@ -1,19 +1,18 @@
+import '../../styles/banner.css';
 import banner from '../../assets/banner.png';
-
-import * as S from './styled';
 
 export default function Hero() {
   return (
-    <S.Container>
-      <S.Base>
+    <div className="banner">
+      <div className="banner__text">
         <div>
           <p>Olá, o que você está buscando?</p>
           <h1>Criar ou migrar seu e-commerce?</h1>
         </div>
-      </S.Base>
+      </div>
       <img src="" alt="" />
 
-      <S.Banner src={banner} alt="" />
-    </S.Container>
+      <img src={banner} alt="" className="banner__image" />
+    </div>
   );
 }
