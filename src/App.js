@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
-import Header from './components/Header';
+import Header from './components/Header/Header';
 
-import Products from './components/Products';
+import Products from './components/Products/Products';
 
 export default function App() {
   const [cart, setCart] = useState([]);
