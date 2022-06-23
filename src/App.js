@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import Header from './components/Header';
 
 import Products from './components/Products';
 
@@ -31,7 +32,7 @@ export default function App() {
 
   return (
     <div className="App">
-      {JSON.stringify(cart)}
+      <Header cart={cart} />
       <Products addToCart={addToCart} />
     </div>
   );
