@@ -7,33 +7,33 @@ import vtexLogo from '../../assets/vtex.svg';
 export default function Footer() {
   return (
     <footer className="footer">
-      <div>
-        <h3>Localização</h3>
-        <div>
+      <div className="contact">
+        <h3 className="contact__title">Localização</h3>
+        <div className="contact__info">
           <p>Avenida Andrômeda, 2000. Bloco 6 e 8</p>
           <p>Alphaville SP</p>
           <p>brasil@corebiz.ag</p>
           <p>+55 11 3090 1039</p>
         </div>
       </div>
-      <div className="footer__contact">
-        <button type="button">
+      <div className="cta">
+        <button type="button" className="cta__btn">
           <img src={mail} alt="" />
-          <p>ENTRE EM CONTATO</p>
+          <p className="cta__text">ENTRE EM CONTATO</p>
         </button>
-        <button type="button">
+        <button type="button" className="cta__btn">
           <img src={contact} alt="" />
-          <p>FALE COM O NOSSO CONSULTOR ONLINE</p>
+          <p className="cta__text">FALE COM O NOSSO CONSULTOR ONLINE</p>
         </button>
       </div>
-      <div>
-        <div>
-          <span>Created by</span>
-          <img src={corebizLogo} alt="Corebiz" />
+      <div className="companies">
+        <div className="company">
+          <p className="company__topText">Created by</p>
+          <img src={corebizLogo} alt="Corebiz" className="company__logo" />
         </div>
-        <div>
-          <span>Powered by</span>
-          <img src={vtexLogo} alt="VTEX" />
+        <div className="company">
+          <p className="company__topText">Powered by</p>
+          <img src={vtexLogo} alt="VTEX" className="company__logo" />
         </div>
       </div>
     </footer>
