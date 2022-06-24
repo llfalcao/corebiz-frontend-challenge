@@ -9,13 +9,19 @@ Apesar do tempo um pouco limitado, acredito que o layout tenha ficado satisfató
 ### Usando o npm
 
 1. Instale as dependências necessárias:
-   `$ npm i`
+
+`$ npm i`
+
 2. Inicie o app
-   `$ npm start`
+
+`$ npm start`
 
 ### Usando o yarn
 
 1. Instale as dependências necessárias:
-   `$ yarn`
+
+`$ yarn`
+
 2. Inicie o app
-   `$ yarn start`
+
+`$ yarn start`
