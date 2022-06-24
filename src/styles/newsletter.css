@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   background-color: #f2f2f2;
-  padding: 2.5rem;
+  padding: 5rem;
 }
 
 .newsletter__title {
@@ -62,4 +62,20 @@
 
 .newsletter__success {
   margin-top: 1rem;
+}
+
+.successMessage {
+  text-align: center;
+}
+
+.successMessage__btn {
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 5px;
+  width: 100%;
+  padding: 0.6rem 0;
+  margin-top: 0.5rem;
+  cursor: pointer;
 }
