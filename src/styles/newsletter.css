@@ -79,3 +79,14 @@
   margin-top: 0.5rem;
   cursor: pointer;
 }
+
+@media (max-width: 400px) {
+  .newsletter {
+    padding: 3rem 1rem;
+  }
+
+  .newsletter__fields {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

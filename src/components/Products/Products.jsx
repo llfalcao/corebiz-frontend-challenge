@@ -31,7 +31,7 @@ export default function Products({ addToCart }) {
         {products.map((p) => (
           <li key={p.productId} className="product">
             <div className="product__info">
-              <img src={p.imageUrl} alt={p.productName} />
+              <img src={p.imageUrl} alt={p.productName} className="product__image" />
               <p className="product__name">{p.productName}</p>
               <ProductRating rating={p.stars} />
               {p.listPrice ? (

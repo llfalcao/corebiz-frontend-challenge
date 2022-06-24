@@ -77,10 +77,6 @@
 
 .product__buyBtn {
   display: none;
-}
-
-.product:hover .product__buyBtn {
-  display: block;
   background-color: #000000;
   color: #ffffff;
   padding: 0.6rem 2rem;
@@ -89,6 +85,34 @@
   cursor: pointer;
 }
 
+.product:hover .product__buyBtn {
+  display: block;
+}
+
 .placeholder {
   height: 24px;
+}
+
+@media (max-width: 400px) {
+  .products__container {
+    gap: 3rem;
+  }
+
+  .product {
+    width: 30vw;
+    min-width: 120px;
+    height: auto;
+  }
+
+  .product__image {
+    width: 100%;
+  }
+
+  .product__buyBtn {
+    display: block;
+  }
+
+  .product:hover {
+    background: none;
+  }
 }
