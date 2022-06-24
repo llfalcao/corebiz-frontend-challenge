@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/corebiz-frontend-challenge/static/css/main.4059d9f3.css",
+    "main.js": "/corebiz-frontend-challenge/static/js/main.aa848067.js",
+    "static/media/banner.png": "/corebiz-frontend-challenge/static/media/banner.ae40352cf7198120a954.png",
+    "static/media/vtex.svg": "/corebiz-frontend-challenge/static/media/vtex.44088c577b04e8b3e7d1bc8044eabfe9.svg",
+    "static/media/user.svg": "/corebiz-frontend-challenge/static/media/user.a17033538a08a6058301c407dad07b75.svg",
+    "static/media/cart.svg": "/corebiz-frontend-challenge/static/media/cart.e1840e0b6217e426452cca3628cbede0.svg",
+    "index.html": "/corebiz-frontend-challenge/index.html",
+    "static/media/search.svg": "/corebiz-frontend-challenge/static/media/search.b4262fb173f1384666f151f3780bc684.svg",
+    "static/media/empty-star.svg": "/corebiz-frontend-challenge/static/media/empty-star.a0301fadc96f1c813ca7611a58015794.svg",
+    "static/media/contact.svg": "/corebiz-frontend-challenge/static/media/contact.60caf7f6bdcb5ddcce755653e55b7690.svg",
+    "static/media/mail.svg": "/corebiz-frontend-challenge/static/media/mail.7ff02284b8e23ed00f7f879b57207a1b.svg",
+    "static/media/star.svg": "/corebiz-frontend-challenge/static/media/star.48a7aa257c0fa1c7e19eeb4557f3b675.svg",
+    "static/media/menu.svg": "/corebiz-frontend-challenge/static/media/menu.7826b49aa17f88d61c9469129b9108b3.svg",
+    "main.4059d9f3.css.map": "/corebiz-frontend-challenge/static/css/main.4059d9f3.css.map",
+    "main.aa848067.js.map": "/corebiz-frontend-challenge/static/js/main.aa848067.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4059d9f3.css",
+    "static/js/main.aa848067.js"
+  ]
+}
