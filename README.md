@@ -4,7 +4,9 @@ Projeto realizado para o teste de dev front-end da Corebiz, envolvendo consumo d
 
 Apesar do tempo um pouco limitado, acredito que o layout tenha ficado satisfatório; os produtos podem ser adicionados ao carrinho e sua quantidade incrementada, e a inscrição na _newsletter_ também está funcionando. Ficaram pendentes algumas funcionalidades como menu de navegação para mobile, uma sidebar para o carrinho e um _carousel_ na seção de produtos.
 
-## Executando o projeto
+Link: https://llfalcao.github.io/corebiz-frontend-challenge
+
+## Executando o projeto localmente
 
 ### Usando o npm
 
