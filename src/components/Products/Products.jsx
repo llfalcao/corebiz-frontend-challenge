@@ -1,6 +1,7 @@
 import '../../styles/products.css';
 import { useState, useEffect } from 'react';
 import { baseUrl } from '../../api/products';
+import ProductRating from '../ProductRating/ProductRating';
 
 export default function Products({ addToCart }) {
   const [products, setProducts] = useState([]);
@@ -10,7 +11,6 @@ export default function Products({ addToCart }) {
       const response = await fetch(baseUrl);
       const data = await response.json();
       setProducts(data);
-      console.log(data);
     };
 
     getProducts();
@@ -33,7 +33,7 @@ export default function Products({ addToCart }) {
             <div className="product__info">
               <img src={p.imageUrl} alt={p.productName} />
               <p className="product__name">{p.productName}</p>
-              {/* todo: star rating component */}
+              <ProductRating rating={p.stars} />
               {p.listPrice ? (
                 <p className="product__listPrice">de {priceToString(p.listPrice)}</p>
               ) : (

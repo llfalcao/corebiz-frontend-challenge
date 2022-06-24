@@ -36,7 +36,7 @@
 
 .product {
   text-align: center;
-  height: 350px;
+  height: 370px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -59,7 +59,8 @@
   color: #7a7a7a;
   font-size: 12px;
   font-weight: 500;
-  margin-top: 0.5rem;
+  margin-top: 0.3rem;
+  text-decoration: line-through;
 }
 
 .product__price {
