@@ -2,7 +2,7 @@
 
 Projeto realizado para o teste de dev front-end da Corebiz, envolvendo consumo de APIs, design responsivo, e uso de componentes React.
 
-Apesar do tempo um pouco limitado, acredito que o layout tenha ficado satisfatório; os produtos também podem ser adicionados ao carrinho e sua quantidade incrementada. Ficaram pendentes algumas funcionalidades como barra de navegação para mobile e uma sidebar para o carrinho.
+Apesar do tempo um pouco limitado, acredito que o layout tenha ficado satisfatório; os produtos podem ser adicionados ao carrinho e sua quantidade incrementada, e a inscrição na _newsletter_ também está funcionando. Ficaram pendentes algumas funcionalidades como menu de navegação para mobile, uma sidebar para o carrinho e um _carousel_ na seção de produtos.
 
 ## Executando o projeto
 
